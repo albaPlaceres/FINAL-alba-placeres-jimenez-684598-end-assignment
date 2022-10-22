@@ -1,6 +1,5 @@
 package com.example.finalalbaplaceresjimenez684598endassignment;
 
-import com.example.finalalbaplaceresjimenez684598endassignment.dal.Database;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -19,7 +18,6 @@ public class LibraryApplication extends Application {
     }
 
     public static void main(String[] args) {
-        Database.addUsers();
         launch();
     }
 }
