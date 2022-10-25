@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ca68fac-4689-4dcf-9deb-b3a99e6b0038" name="Changes" comment="login finished">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/dal/MemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/ui/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/ui/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/main-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/LibraryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/LibraryApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/dal/Database.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/model/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/login-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/dal/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/dal/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/model/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/ui/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/ui/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -46,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +68,13 @@
       <workItem from="1666303786216" duration="2579000" />
       <workItem from="1666350137365" duration="10704000" />
       <workItem from="1666463383297" duration="572000" />
-      <workItem from="1666463969245" duration="9196000" />
+      <workItem from="1666463969245" duration="14764000" />
+      <workItem from="1666520391408" duration="110000" />
+      <workItem from="1666520510158" duration="34000" />
+      <workItem from="1666525187726" duration="295000" />
+      <workItem from="1666525492331" duration="2110000" />
+      <workItem from="1666532041365" duration="2945000" />
+      <workItem from="1666534999952" duration="13036000" />
     </task>
     <task id="LOCAL-00001" summary="login view">
       <created>1666306484627</created>
@@ -80,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666306484627</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="login finished">
+      <created>1666482859966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666482859966</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
