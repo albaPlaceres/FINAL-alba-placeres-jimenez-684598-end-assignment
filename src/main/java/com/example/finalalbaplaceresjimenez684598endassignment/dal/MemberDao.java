@@ -1,7 +1,6 @@
 package com.example.finalalbaplaceresjimenez684598endassignment.dal;
 
 import com.example.finalalbaplaceresjimenez684598endassignment.model.Member;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;

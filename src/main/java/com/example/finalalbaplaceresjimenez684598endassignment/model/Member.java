@@ -3,13 +3,17 @@ package com.example.finalalbaplaceresjimenez684598endassignment.model;
 import java.time.LocalDate;
 
 public class Member {
+
+    //region Variables
     private String firstName;
     private String lastName;
     private String username;
     private String password;
     private int memberIdentifier;
     private LocalDate birthDate;
+    //endregion
 
+    //region Getters and Setters
     public String getFullName() {
         return (firstName + " " + lastName);
     }
@@ -45,6 +49,8 @@ public class Member {
         this.birthDate = birthDate;
     }
 
+    //endregion
+
     // Constructor with separate first and last name
     public Member(String firstName, String lastName, String username, String password, LocalDate birhtdate) {
         this.firstName = firstName;
@@ -55,10 +61,10 @@ public class Member {
     }
 
     // Constructor with full name
-    public Member(String fullName, String username, String password, LocalDate birhtdate) {
+    public Member(String fullName, String username, String password, LocalDate birthdate) {
         setFullName(fullName);
         this.username = username;
         this.password = password;
-        this.birthDate = birhtdate;
+        this.birthDate = birthdate;
     }
 }

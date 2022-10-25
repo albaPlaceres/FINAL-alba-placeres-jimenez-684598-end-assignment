@@ -15,11 +15,11 @@
       </ImageView>
       <TabPane cache="true" layoutX="1.0" layoutY="58.0" prefHeight="383.0" prefWidth="726.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="1.0">
         <tabs>
-          <Tab fx:id="lendingOrReceivingTab" text="Lending/receiving">
+          <Tab text="Lending/receiving">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;">
                      <children>
-                        <Label layoutX="14.0" layoutY="14.0" text="Welcome [name of user]" textFill="#6e6e6e">
+                        <Label fx:id="nameOfUserLabel" layoutX="14.0" layoutY="14.0" text="Welcome [name of user]" textFill="#6e6e6e">
                            <font>
                               <Font size="24.0" />
                            </font></Label>
@@ -27,13 +27,13 @@
                            <children>
                               <Pane prefHeight="210.0" prefWidth="328.0" style="-fx-background-color: white;">
                                  <children>
-                                    <TextField id="itemCodeTextField" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
+                                    <TextField id="itemCodeLendingTextField" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
                                     <TextField id="memberIdentifierTextField" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="300.0" promptText="Member identifier" />
                                     <Button layoutX="14.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Lend item" textFill="WHITE" />
                                  </children></Pane>
                               <Pane prefHeight="210.0" prefWidth="328.0" style="-fx-background-color: white">
                                  <children>
-                                    <TextField id="itemCodeTextField" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
+                                    <TextField id="itemCodeReceivingTextField" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
                                      <Button layoutX="14.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Receive item" textFill="WHITE" />
                                  </children></Pane>
                            </children>
@@ -44,12 +44,12 @@
                      </children></AnchorPane>
             </content>
           </Tab>
-          <Tab fx:id="collectionTab" text="Collection">
+          <Tab text="Collection">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;" />
             </content>
           </Tab>
-          <Tab fx:id="membersTab" text="Members">
+          <Tab text="Members">
               <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;" />
               </content>
