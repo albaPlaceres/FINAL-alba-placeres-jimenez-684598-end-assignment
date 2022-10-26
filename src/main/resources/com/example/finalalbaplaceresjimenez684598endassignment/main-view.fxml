@@ -27,14 +27,16 @@
                            <children>
                               <Pane prefHeight="210.0" prefWidth="328.0" style="-fx-background-color: white;">
                                  <children>
-                                    <TextField id="itemCodeLendingTextField" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
-                                    <TextField id="memberIdentifierTextField" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="300.0" promptText="Member identifier" />
-                                    <Button layoutX="14.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Lend item" textFill="WHITE" />
+                                    <TextField fx:id="itemCodeLendingText" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
+                                    <TextField fx:id="memberIdentifierText" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="300.0" promptText="Member identifier" />
+                                    <Button fx:id="lendItemButton" onAction="#onLendItemButtonClick" layoutX="14.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Lend item" textFill="WHITE" />
+                                    <Label fx:id="lendingMessageLabel" layoutX="14.0" layoutY="153.0" />
                                  </children></Pane>
                               <Pane prefHeight="210.0" prefWidth="328.0" style="-fx-background-color: white">
                                  <children>
-                                    <TextField id="itemCodeReceivingTextField" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
-                                     <Button layoutX="14.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Receive item" textFill="WHITE" />
+                                    <TextField fx:id="itemCodeReceivingText" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
+                                     <Button fx:id="receiveItemButton" onAction="#onReceiveItemButtonClick" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Receive item" textFill="WHITE" />
+                                    <Label fx:id="receivingMessageLabel" layoutX="14.0" layoutY="108.0" />
                                  </children></Pane>
                            </children>
                            <opaqueInsets>

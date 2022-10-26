@@ -12,13 +12,13 @@ public class MemberDao {
         return members;
     }
 
-    // Creating a new member with first and last name
-    public void createNewMember(String firstName, String lastName, String username, String password, LocalDate birthdate){
-        members.add(new Member(firstName, lastName, username, password, birthdate));
+    // Add a new member with first and last name
+    public void addMember(String firstName, String lastName, String username, String password, LocalDate birthdate, int memberIdentifier){
+        members.add(new Member(firstName, lastName, username, password, birthdate, memberIdentifier));
     }
 
-    // Creating a new member with full name
-    public void createNewMember(String fullName, String username, String password, LocalDate birthdate){
-        members.add(new Member(fullName, username, password, birthdate));
+    // Add a new member with full name
+    public void addMember(String fullName, String username, String password, LocalDate birthdate, int memberIdentifier){
+        members.add(new Member(fullName, username, password, birthdate, memberIdentifier));
     }
 }

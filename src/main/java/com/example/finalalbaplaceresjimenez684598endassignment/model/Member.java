@@ -9,8 +9,8 @@ public class Member {
     private String lastName;
     private String username;
     private String password;
-    private int memberIdentifier;
     private LocalDate birthDate;
+    private int memberIdentifier;
     //endregion
 
     //region Getters and Setters
@@ -52,19 +52,21 @@ public class Member {
     //endregion
 
     // Constructor with separate first and last name
-    public Member(String firstName, String lastName, String username, String password, LocalDate birhtdate) {
+    public Member(String firstName, String lastName, String username, String password, LocalDate birhtdate, int memberIdentifier) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
         this.password = password;
         this.birthDate = birhtdate;
+        this.memberIdentifier = memberIdentifier;
     }
 
     // Constructor with full name
-    public Member(String fullName, String username, String password, LocalDate birthdate) {
+    public Member(String fullName, String username, String password, LocalDate birthdate, int memberIdentifier) {
         setFullName(fullName);
         this.username = username;
         this.password = password;
         this.birthDate = birthdate;
+        this.memberIdentifier = memberIdentifier;
     }
 }
