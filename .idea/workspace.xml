@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ca68fac-4689-4dcf-9deb-b3a99e6b0038" name="Changes" comment="working on lending and receiving items">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/ItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/dal/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/dal/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/logic/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/model/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/ui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/ui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/ui/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/ui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/login-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +58,26 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="LibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.finalalbaplaceresjimenez684598endassignment.LibraryApplication" />
+      <module name="FINAL-alba-placeres-jimenez-684598-end-assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.finalalbaplaceresjimenez684598endassignment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LibraryApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +98,7 @@
       <workItem from="1666534999952" duration="13276000" />
       <workItem from="1666691124735" duration="2661000" />
       <workItem from="1666726711075" duration="12421000" />
-      <workItem from="1666742229149" duration="6831000" />
+      <workItem from="1666742229149" duration="23233000" />
     </task>
     <task id="LOCAL-00001" summary="login view">
       <created>1666306484627</created>
@@ -106,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666740154234</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="working on lending and receiving items">
+      <created>1666749196642</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666749196642</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -3,6 +3,8 @@ package com.example.finalalbaplaceresjimenez684598endassignment.logic;
 import com.example.finalalbaplaceresjimenez684598endassignment.dal.ItemDao;
 import com.example.finalalbaplaceresjimenez684598endassignment.model.Item;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 
 public class ItemService {
@@ -31,5 +33,14 @@ public class ItemService {
         }
         itemDao.addItem(147, "Coding for Dummies", "Abraham, Nikhil");
         itemDao.addItem(308, "Clean Code", "Martin, Robert C.");
+    }
+
+    // Calculate the days an item is late
+    public long daysLate(Item item){
+        LocalDate threeWeeksPastLendingDate = item.getLendingDate().plusWeeks(3);   // 3 weeks after lending date
+        if (LocalDate.now().isAfter(threeWeeksPastLendingDate)){ // If the item is too late return the amount of late days
+            return (ChronoUnit.DAYS.between(threeWeeksPastLendingDate, LocalDate.now()));
+        }
+        return 0; // If it is not late return 0 days
     }
 }

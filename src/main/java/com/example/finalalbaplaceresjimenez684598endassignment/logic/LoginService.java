@@ -10,7 +10,7 @@ public class LoginService {
         memberService = new MemberService();
     }
 
-    // Check if the username and password combination is correct
+    // Check if the member exists and the combination is correct
     public boolean loginSuccessful(String enteredUsername, String enteredPassword){
         Member member = memberService.getMemberByUsername(enteredUsername);
         return (Objects.nonNull(member) && (Objects.equals(member.getPassword(), enteredPassword)));

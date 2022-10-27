@@ -1,4 +1,4 @@
-package com.example.finalalbaplaceresjimenez684598endassignment.ui;
+package com.example.finalalbaplaceresjimenez684598endassignment.controller;
 
 import com.example.finalalbaplaceresjimenez684598endassignment.LibraryApplication;
 import com.example.finalalbaplaceresjimenez684598endassignment.logic.LoginService;
@@ -70,6 +70,7 @@ public class LoginController {
         mainStage.setScene(scene);
         mainStage.show();
         MainController mainController = fxmlLoader.getController();
-        mainController.displayMemberName(member);
+        mainController.setMember(member);
+        mainController.displayMemberName(member);   // Display the name of the member
     }
 }

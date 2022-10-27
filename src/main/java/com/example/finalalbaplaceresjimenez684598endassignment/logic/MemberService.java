@@ -26,9 +26,9 @@ public class MemberService {
 
     // Adding random members to the database
     public void addMembers(){   // 'LocalDate.of' checks if the date is valid
-        memberDao.addMember("Alba Placeres", "username1", "password1",  LocalDate.of(2003, 12, 9), 001);
-        memberDao.addMember("Vanessa", "Fedorciuk", "username2", "password2", LocalDate.of(2002, 12, 31), 002);
-        memberDao.addMember("David Jimenez", "username3", "password3", LocalDate.of(1979, 11, 15), 003);
-        memberDao.addMember("Yeray", "Placeres", "username4", "password4", LocalDate.of(1975, 12, 20), 004);
+        memberDao.addMember("Alba Placeres", "username1", "password1",  LocalDate.of(2003, 12, 9), 101);
+        memberDao.addMember("Vanessa", "Fedorciuk", "username2", "password2", LocalDate.of(2002, 12, 31), 102);
+        memberDao.addMember("David Jimenez", "username3", "password3", LocalDate.of(1979, 11, 15), 103);
+        memberDao.addMember("Yeray", "Placeres", "username4", "password4", LocalDate.of(1975, 12, 20), 104);
     }
 }
