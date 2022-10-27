@@ -13,13 +13,13 @@
             <Image url="@../../../images/logo.png" />
          </image>
       </ImageView>
-      <TabPane cache="true" layoutX="1.0" layoutY="58.0" prefHeight="383.0" prefWidth="726.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="1.0">
+      <TabPane cache="true" layoutY="57.0" prefHeight="383.0" prefWidth="726.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0">
         <tabs>
           <Tab text="Lending/receiving">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;">
                      <children>
-                        <Label fx:id="nameOfUserLabel" layoutX="14.0" layoutY="14.0" text="Welcome [name of user]" textFill="#6e6e6e">
+                        <Label fx:id="nameOfUserLabel" layoutX="23.0" layoutY="14.0" text="Welcome [name of user]" textFill="#6e6e6e">
                            <font>
                               <Font size="24.0" />
                            </font></Label>
@@ -29,13 +29,13 @@
                                  <children>
                                     <TextField fx:id="itemCodeLendingText" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
                                     <TextField fx:id="memberIdentifierText" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="300.0" promptText="Member identifier" />
-                                    <Button fx:id="lendItemButton" onAction="#onLendItemButtonClick" layoutX="14.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Lend item" textFill="WHITE" />
+                                    <Button layoutX="14.0" layoutY="110.0" mnemonicParsing="false" onAction="#onLendItemButtonClick" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Lend item" textFill="WHITE" />
                                     <Label fx:id="lendingMessageLabel" layoutX="14.0" layoutY="153.0" />
                                  </children></Pane>
                               <Pane prefHeight="210.0" prefWidth="328.0" style="-fx-background-color: white">
                                  <children>
                                     <TextField fx:id="itemCodeReceivingText" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="300.0" promptText="Item code" />
-                                     <Button fx:id="receiveItemButton" onAction="#onReceiveItemButtonClick" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Receive item" textFill="WHITE" />
+                                     <Button layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#onReceiveItemButtonClick" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3692ff" text="Receive item" textFill="WHITE" />
                                     <Label fx:id="receivingMessageLabel" layoutX="14.0" layoutY="108.0" />
                                  </children></Pane>
                            </children>
@@ -48,7 +48,25 @@
           </Tab>
           <Tab text="Collection">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;">
+                     <children>
+                        <Label layoutX="21.0" layoutY="14.0" text="Items" textFill="#6e6e6e">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TableView layoutX="21.0" layoutY="59.0" prefHeight="234.0" prefWidth="682.0">
+                          <columns>
+                            <TableColumn prefWidth="96.19997787475586" text="Item code" />
+                            <TableColumn prefWidth="94.39999389648438" text="Available" />
+                              <TableColumn prefWidth="396.00001525878906" text="Title" />
+                              <TableColumn minWidth="0.0" prefWidth="94.4000244140625" text="Author" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="24.0" layoutY="307.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #3692ff" text="Add item" textFill="WHITE" />
+                        <Button layoutX="158.0" layoutY="307.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #737373" text="Edit Item" textFill="WHITE" />
+                        <Button layoutX="293.0" layoutY="307.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #d50b0b" text="Delete Item" textFill="WHITE" />
+                     </children></AnchorPane>
             </content>
           </Tab>
           <Tab text="Members">
