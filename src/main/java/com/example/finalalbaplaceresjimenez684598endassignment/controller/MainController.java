@@ -5,15 +5,18 @@ import com.example.finalalbaplaceresjimenez684598endassignment.model.Item;
 import com.example.finalalbaplaceresjimenez684598endassignment.model.Member;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Objects;
+import java.util.PropertyResourceBundle;
 
 public class MainController {
 
-    //region Variables
     private ItemService itemService;
     private Member member;
     public Member getMember() {
@@ -22,6 +25,14 @@ public class MainController {
     public void setMember(Member member) {
         this.member = member;
     }
+
+    public MainController() {
+        itemService = new ItemService();
+        //initializeCollectionTable();
+    }
+
+
+    //region Lending/receiving tab
     @FXML
     private Label nameOfUserLabel;
     @FXML
@@ -35,13 +46,8 @@ public class MainController {
     @FXML
     private TextField itemCodeReceivingText;
 
-    //endregion
 
-    public MainController() {
-        itemService = new ItemService();
-    }
     // Display member's name
-
     public void displayMemberName(Member member){
         nameOfUserLabel.setText("Welcome " + member.getFullName());
     }
@@ -99,4 +105,27 @@ public class MainController {
         }
         itemCodeReceivingText.setText("");
     }
+    //endregion
+
+    //region Collection tab
+
+    @FXML
+    private TableView<Item> collectionTable;
+    @FXML
+    private TableColumn<Item, Integer> itemCodeColumn;
+    @FXML
+    private TableColumn<Item, String> availableColumn;
+    @FXML
+    private TableColumn<Item, String> titleColumn;
+    @FXML
+    private TableColumn<Item, String> authorColumn;
+
+    public void initializeCollectionTable(){
+        itemCodeColumn.setCellValueFactory(new PropertyValueFactory<>("hola"));
+    }
+
+    //endregion
+
+    //region Members tab
+    //endregion
 }

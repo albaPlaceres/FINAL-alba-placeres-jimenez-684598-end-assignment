@@ -55,12 +55,12 @@
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <TableView layoutX="21.0" layoutY="59.0" prefHeight="234.0" prefWidth="682.0">
+                        <TableView fx:id="collectionTable" layoutX="21.0" layoutY="59.0" prefHeight="234.0" prefWidth="682.0">
                           <columns>
-                            <TableColumn prefWidth="96.19997787475586" text="Item code" />
-                            <TableColumn prefWidth="94.39999389648438" text="Available" />
-                              <TableColumn prefWidth="396.00001525878906" text="Title" />
-                              <TableColumn minWidth="0.0" prefWidth="94.4000244140625" text="Author" />
+                            <TableColumn fx:id="itemCodeColumn" prefWidth="96.19997787475586" text="Item code" />
+                            <TableColumn fx:id="availableColumn" prefWidth="94.39999389648438" text="Available" />
+                              <TableColumn fx:id="titleColumn" prefWidth="396.00001525878906" text="Title" />
+                              <TableColumn fx:id="authorColumn" minWidth="0.0" prefWidth="94.4000244140625" text="Author" />
                           </columns>
                         </TableView>
                         <Button layoutX="24.0" layoutY="307.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #3692ff" text="Add item" textFill="WHITE" />
