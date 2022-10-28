@@ -12,6 +12,10 @@ target/
 *.iml
 *.ipr
 
+### Sonar ###
+#Sonar generated dir
+.idea/sonarlint/
+
 ### Eclipse ###
 .apt_generated
 .classpath
