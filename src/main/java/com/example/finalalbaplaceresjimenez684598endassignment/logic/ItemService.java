@@ -5,6 +5,7 @@ import com.example.finalalbaplaceresjimenez684598endassignment.model.Item;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.List;
 import java.util.Objects;
 
 public class ItemService {
@@ -42,5 +43,10 @@ public class ItemService {
             return (ChronoUnit.DAYS.between(threeWeeksPastLendingDate, LocalDate.now()));
         }
         return 0; // If it is not late return 0 days
+    }
+
+    // Get the items from the database
+    public List<Item> getItems(){
+        return itemDao.getItems();
     }
 }

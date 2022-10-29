@@ -3,6 +3,8 @@ package com.example.finalalbaplaceresjimenez684598endassignment.controller;
 import com.example.finalalbaplaceresjimenez684598endassignment.logic.ItemService;
 import com.example.finalalbaplaceresjimenez684598endassignment.model.Item;
 import com.example.finalalbaplaceresjimenez684598endassignment.model.Member;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -27,7 +29,7 @@ public class MainController {
 
     public MainController() {
         itemService = new ItemService();
-        // call the method to initialize the tables (add the data to the table)
+        initializeCollectionTable();
     }
 
 
@@ -116,12 +118,18 @@ public class MainController {
     @FXML
     private TableColumn<Item, String> authorColumn;
 
+    private ObservableList<Item> items = FXCollections.observableList(itemService.getItems());
+
+
     public void initializeCollectionTable(){
-        itemCodeColumn.setCellValueFactory(new PropertyValueFactory<>("hola"));
+        itemCodeColumn.setCellValueFactory(new PropertyValueFactory<Item, Integer>("itemCode"));
+        availableColumn.setCellValueFactory(new PropertyValueFactory<Item, String>("available"));
+        titleColumn.setCellValueFactory(new PropertyValueFactory<Item, String>("title"));
+        authorColumn.setCellValueFactory(new PropertyValueFactory<Item, String>("author"));
+        collectionTable.setItems(items);    // Adding the items list to the table
     }
 
     //endregion
-
     //region Members tab
     //endregion
 }
