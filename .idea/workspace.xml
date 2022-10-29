@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca68fac-4689-4dcf-9deb-b3a99e6b0038" name="Changes" comment="starting collection ui">
+    <list default="true" id="5ca68fac-4689-4dcf-9deb-b3a99e6b0038" name="Changes" comment="28/10/2022">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dba4c664745725bf5c1223fece7138e31f0bb6f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03dd2d25dab60c4d93d226d63980d2838b77aec0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/673b080d96e27caf032aeedf6ceca4f187c8fbd0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalalbaplaceresjimenez684598endassignment/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalalbaplaceresjimenez684598endassignment/main-view.fxml" afterDir="false" />
     </list>
@@ -96,7 +98,7 @@
       <workItem from="1666726711075" duration="12421000" />
       <workItem from="1666742229149" duration="24440000" />
       <workItem from="1666911409215" duration="1393000" />
-      <workItem from="1666942434708" duration="6907000" />
+      <workItem from="1666942434708" duration="13305000" />
     </task>
     <task id="LOCAL-00001" summary="login view">
       <created>1666306484627</created>
@@ -172,6 +174,7 @@
     <MESSAGE value="working on lending and receiving items" />
     <MESSAGE value="finished lending and receiving items" />
     <MESSAGE value="starting collection ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting collection ui" />
+    <MESSAGE value="28/10/2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="28/10/2022" />
   </component>
 </project>

@@ -55,8 +55,6 @@ public class LoginController {
 
             else{   // If the login fails, let the user know with the user and empty the fields
                 message.setText("Invalid username/password combination");
-                usernameText.setText("");
-                passwordText.setText("");
             }
         }
     }

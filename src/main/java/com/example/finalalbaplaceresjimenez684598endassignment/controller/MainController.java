@@ -13,7 +13,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Objects;
-import java.util.PropertyResourceBundle;
 
 public class MainController {
 
@@ -28,7 +27,7 @@ public class MainController {
 
     public MainController() {
         itemService = new ItemService();
-        //initializeCollectionTable();
+        // call the method to initialize the tables (add the data to the table)
     }
 
 
@@ -77,8 +76,6 @@ public class MainController {
             else{
                 lendingMessageLabel.setText("Item doesn't exist or its not available");  // Show that the item doesn't exist
             }
-            itemCodeLendingText.setText("");
-            memberIdentifierText.setText("");
         }
     }
 
@@ -103,7 +100,6 @@ public class MainController {
                 receivingMessageLabel.setText("Item doesn't exist or has never been lent"); // Show that the item doesn't exist
             }
         }
-        itemCodeReceivingText.setText("");
     }
     //endregion
 
